@@ -11,7 +11,7 @@ def convert_to_fahrenheit(celsius):
 
 try:
     temp = float(input("Enter the temperature to convert: "))
-    choice = input("Is the temperature in Celcius or Fahrenheit?(C/F): ")
+    choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
     if choice.lower() == 'c':
         print(f"{temp}°C is {convert_to_fahrenheit(temp)}°F")
     elif choice.lower() == 'f':
