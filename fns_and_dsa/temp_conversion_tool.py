@@ -1,8 +1,8 @@
-FAHRENHEIT_TO_CELCIUS_FACTOR = 5/9
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_T0_FAHRENHEIT_FACTOR = 9/5
 
-def convert_to_celcius(fahrenheit):
-    celsius = FAHRENHEIT_TO_CELCIUS_FACTOR*(fahrenheit-32)
+def convert_to_celsius(fahrenheit):
+    celsius = FAHRENHEIT_TO_CELSIUS_FACTOR*(fahrenheit-32)
     return celsius
 
 def convert_to_fahrenheit(celcius):
@@ -15,7 +15,7 @@ try:
     if choice.lower() == 'c':
         print(f"{temp}°C is {convert_to_fahrenheit(temp)}°F")
     elif choice.lower() == 'f':
-        print(f"{temp}°F is {convert_to_celcius(temp)}°C")
+        print(f"{temp}°F is {convert_to_celsius(temp)}°C")
     else :
         print("Invalid choice")
 except Exception as e:
