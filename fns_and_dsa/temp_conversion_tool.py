@@ -19,6 +19,6 @@ try:
     else :
         print("Invalid choice")
 except Exception as e:
-    print(f"An error occured: {e}")
+    print(f"Invalid temperature. Please enter a numeric value.\n {e}")
 
 
