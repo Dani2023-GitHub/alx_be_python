@@ -18,22 +18,22 @@ class Book:
 
 class Library:
     def __init__(self):
-        self.__book = []
+        self.__books = []
 
     def add_book(self, book):
-        self.__book.append(book)
+        self.__books.append(book)
 
     def check_out_book(self, title):
-        for book in self.__book:
+        for book in self.__books:
             if book.title == title:
                 book.check_out_book()
     
     def return_book(self,title):
-        for book in self.__book:
+        for book in self.__books:
             if book.title == title:
                 book.return_book()
 
     def list_available_books(self):
-        for book in self.__book:
+        for book in self.__books:
             if book.get_status() == False:
                 print(book.title, book.author)       
